@@ -1,0 +1,31 @@
+{
+  "name": "vertical-ime-input",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "japanese",
+    "vertical",
+    "text",
+    "input"
+  ],
+  "author": "sakkom|sacamaro",
+  "license": "MIT",
+  "description": "for natural Japanese writing",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/react": "^18.0.0"
+  }
+}
