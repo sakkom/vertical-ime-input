@@ -1,7 +1,7 @@
 ## Overview
 🪢 a React library for natural vertical writing flow for creative writing.
 
-📹 **Demo** https://www.youtube.com/watch?v=6YN5IDenTfU
+📹 **Demo** https://youtu.be/knRXOdrcHto
 
 ## Features
 - **Small Library (package size: 4.3 kB)** - Fast and smooth writing experience
