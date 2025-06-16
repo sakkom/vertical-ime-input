@@ -10,12 +10,14 @@ import { CharPos } from "../types";
 interface InputModeProps {
   lineLength?: number;
   cellSize?: number;
+  gridGap?: number;
   onTextUpdate?: (content: CharPos[]) => void;
 }
 
 export default function InputMode({
   lineLength = 20,
   cellSize = 30,
+  gridGap = 2,
   onTextUpdate,
 }: InputModeProps) {
   const editor = useEditorState();
@@ -31,12 +33,17 @@ export default function InputMode({
   }, [editor.content, onTextUpdate]);
 
   return (
-    <EditorContainer cellSize={cellSize} lineLength={lineLength}>
+    <EditorContainer
+      cellSize={cellSize}
+      lineLength={lineLength}
+      gridGap={gridGap}
+    >
       <EditorInput
         ref={input.inputRef}
         cursor={editor.cursor}
         isIme={editor.isIme}
         cellSize={cellSize}
+        gridGap={gridGap}
         onChange={input.handleChange}
         onCompositionStart={input.handleCompositionStart}
         onCompositionEnd={input.handleCompositionEnd}
@@ -45,8 +52,9 @@ export default function InputMode({
       <CharacterGrid
         characters={displayContent}
         cursor={editor.cursor}
-        cellSize={cellSize}
         isIme={editor.isIme}
+        cellSize={cellSize}
+        gridGap={gridGap}
       />
     </EditorContainer>
   );

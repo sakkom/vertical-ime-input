@@ -1,15 +1,16 @@
 interface EditorContainerProps {
   cellSize: number;
   lineLength: number;
+  gridGap: number;
   children: React.ReactNode;
 }
 
 export function EditorContainer({
   cellSize,
   lineLength,
+  gridGap,
   children,
 }: EditorContainerProps) {
-  const gridGap = 2;
   const displayCellSize = cellSize + gridGap;
 
   return (

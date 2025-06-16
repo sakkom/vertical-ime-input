@@ -5,6 +5,7 @@ interface EditorInputProps {
   cursor: CursorPos;
   isIme: boolean;
   cellSize: number;
+  gridGap: number;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onCompositionStart: () => void;
   onCompositionEnd: (e: React.CompositionEvent<HTMLInputElement>) => void;
@@ -17,6 +18,7 @@ export const EditorInput = forwardRef<HTMLInputElement, EditorInputProps>(
       cursor,
       isIme,
       cellSize,
+      gridGap,
       onChange,
       onCompositionStart,
       onCompositionEnd,
@@ -24,7 +26,6 @@ export const EditorInput = forwardRef<HTMLInputElement, EditorInputProps>(
     },
     ref,
   ) => {
-    const gridGap = 2;
     const displayCellSize = cellSize + gridGap;
 
     return (

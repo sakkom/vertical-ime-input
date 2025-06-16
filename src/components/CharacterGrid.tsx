@@ -6,8 +6,9 @@ import { calcMaxXPosition } from "../utils/input";
 interface CharacterGridProps {
   characters: CharPos[];
   cursor: CursorPos;
-  cellSize: number;
   isIme: boolean;
+  cellSize: number;
+  gridGap: number;
 }
 
 export function CharacterGrid({
@@ -15,8 +16,8 @@ export function CharacterGrid({
   cursor,
   cellSize,
   isIme,
+  gridGap,
 }: CharacterGridProps) {
-  const gridGap = 2;
   const displayCellSize = cellSize + gridGap;
 
   const maxXPosition = useMemo(() => {
