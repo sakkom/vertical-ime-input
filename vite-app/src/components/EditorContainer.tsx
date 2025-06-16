@@ -15,7 +15,7 @@ export function EditorContainer({
 
   return (
     <div
-      className="w-full flex justify-center items-center relative overflow-auto mt-[32px]"
+      className="w-full flex justify-center relative overflow-auto"
       style={{ height: `${displayCellSize * lineLength}px` }}
     >
       <div
