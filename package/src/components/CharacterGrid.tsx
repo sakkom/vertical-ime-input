@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { CharPos, CursorPos } from "../types";
+import type { CharPos, CursorPos } from "../types";
 import { calcMaxXPosition } from "../utils/input";
 
 interface CharacterGridProps {

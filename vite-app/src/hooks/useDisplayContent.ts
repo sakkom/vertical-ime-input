@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { CharPos } from "../types";
+import type { CharPos } from "../types";
 
 export function useDisplayContent(
   content: CharPos[],

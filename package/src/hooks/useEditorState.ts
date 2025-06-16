@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CharPos, CursorPos } from "../types";
+import type { CharPos, CursorPos } from "../types";
 
 export function useEditorState() {
   const [content, setContent] = useState<CharPos[]>([]);

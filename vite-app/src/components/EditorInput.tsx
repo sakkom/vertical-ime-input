@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { CursorPos } from "../types";
+import type { CursorPos } from "../types";
 
 interface EditorInputProps {
   cursor: CursorPos;

@@ -1,4 +1,4 @@
-import { CharPos, CursorPos } from "../types";
+import type { CharPos, CursorPos } from "../types";
 
 export function calcNewCursor(cursor: CursorPos, lineLength: number) {
   const newYPos = cursor.yPos + 1;

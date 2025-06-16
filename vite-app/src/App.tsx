@@ -1,6 +1,6 @@
 import { useState } from "react";
 import InputMode from "./components/InputMode";
-import { CharPos } from "./types";
+import type { CharPos } from "./types";
 // import { VerticalInput, type CharPos } from "vertical-ime-input";
 
 function App() {

@@ -5,7 +5,7 @@ import { useDisplayContent } from "../hooks/useDisplayContent";
 import { EditorContainer } from "../components/EditorContainer";
 import { EditorInput } from "../components/EditorInput";
 import { CharacterGrid } from "../components/CharacterGrid";
-import { CharPos } from "../types";
+import type { CharPos } from "../types";
 
 interface InputModeProps {
   lineLength?: number;
