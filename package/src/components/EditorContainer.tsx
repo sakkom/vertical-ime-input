@@ -1,21 +1,21 @@
 interface EditorContainerProps {
   cellSize: number;
-  lineLength: number;
   gridGap: number;
+  lineLength: number;
   children: React.ReactNode;
 }
 
 export function EditorContainer({
   cellSize,
-  lineLength,
   gridGap,
+  lineLength,
   children,
 }: EditorContainerProps) {
   const displayCellSize = cellSize + gridGap;
 
   return (
     <div
-      className="w-full flex justify-center items-center relative overflow-auto mt-[32px]"
+      className="w-full flex justify-center relative overflow-auto"
       style={{ height: `${displayCellSize * lineLength}px` }}
     >
       <div
