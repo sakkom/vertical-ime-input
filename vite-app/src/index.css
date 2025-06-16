@@ -1,0 +1,11 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --blueprint-border-color: #000;
+}
+
+body {
+    @apply text-gray-950;
+}
