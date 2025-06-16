@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <InputMode gridGap={20} onTextUpdate={setText} />;
+      <InputMode onTextUpdate={setText} />;
       {/* <VerticalInput gridGap={20} /> */}
     </>
   );

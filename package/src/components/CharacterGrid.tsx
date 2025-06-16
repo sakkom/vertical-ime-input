@@ -29,11 +29,6 @@ export function CharacterGrid({
         const relativeXpos = charObj.xPos - maxXPosition;
         const isLastChar = characters.length - 1 === index;
 
-        const isInvisible =
-          charObj.char.codePointAt(0) === 0x0020 ||
-          charObj.char.codePointAt(0) === 0x3000 ||
-          charObj.char === "\n";
-
         return (
           charObj.char && (
             <div
@@ -46,7 +41,6 @@ export function CharacterGrid({
                 height: `${cellSize}px`,
                 fontSize: `${cellSize * 0.6}px`,
                 writingMode: "vertical-rl",
-                opacity: isInvisible ? 0 : 1,
                 zIndex: 10,
                 ...(isLastChar &&
                   isIme && {
